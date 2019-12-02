@@ -32,4 +32,4 @@ document.body.innerText = 'Hello Parcel!';
 
 如果你没有自己的本地服务，那就执行 dev 命令，Parcel会为你创建一个node服务；如果你有自己的服务，可以使用 watch 命令监听变化并重新打包。
 
-Ok，浏览器打开 http://localhost:1234 就可以看到我们的页面了！
+Ok，浏览器打开 <a href="http://localhost:1234" target="__blank">localhost:1234</a> 就可以看到我们的页面了！注意，此时HMR已经生效了！
