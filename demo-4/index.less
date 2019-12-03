@@ -1,0 +1,19 @@
+:global #root {
+  color: violet;
+}
+
+.nav {
+  .flex;
+  margin-bottom: 20px;
+  a {
+    margin-right: 10px;
+    &:global.active {
+      opacity: 0.5;
+      text-decoration: none;
+    }
+  }
+}
+
+.flex() {
+  display: flex;
+}
