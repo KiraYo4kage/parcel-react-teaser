@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
-import About from './pages/About';
+import asyncComponent from './components/asyncComponent';
 
 import * as styles from './index.less';
 
@@ -17,6 +17,6 @@ ReactDom.render(<BrowserRouter>
   </div>
   <Switch>
     <Route exact path="/" component={App} />
-    <Route path="/about" component={About} />
+    <Route path="/about" component={asyncComponent(() => import('./pages/About'))} />
   </Switch>
 </BrowserRouter>, document.getElementById('root'));
